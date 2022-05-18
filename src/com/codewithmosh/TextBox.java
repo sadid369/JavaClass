@@ -3,10 +3,16 @@ package com.codewithmosh;
 public class TextBox  extends  UIControl{
     private String text = "";// Filed
 
-    public TextBox() {
-        super(true);
-        System.out.println("TextBox");
+//    public TextBox() {
+//        super(true);
+//        System.out.println("TextBox");
+//    }
+
+    @Override
+    public void render() {
+        System.out.println("Render TextBox");
     }
+
     @Override
     public  String toString(){
         return text;

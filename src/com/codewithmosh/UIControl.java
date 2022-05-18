@@ -1,11 +1,13 @@
 package com.codewithmosh;
 
-public class UIControl {
+public abstract class UIControl {
 private boolean isEnabled = true;
-    public UIControl(boolean isEnabled) {
-        this.isEnabled = isEnabled;
-        System.out.println("UIControl");
-    }
+//    public UIControl(boolean isEnabled) {
+//        this.isEnabled = isEnabled;
+//        System.out.println("UIControl");
+//    }
+  public abstract void render();
+
 
 public void enable(){
     isEnabled = true;
